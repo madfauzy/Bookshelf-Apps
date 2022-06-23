@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="assets/book.svg" alt="book">
+        <h1>BOOKSHELF APPS</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container add-book">
+            <form action="#" id="form" class="form">
+                <p>Kamu tau gak bedanya buku sama kamu?<br>Kalo buku aku simpan di rak, kalo kamu di hati aku <i class="fas fa-heart"></i></p>
+                <div class="form-group">
+                    <input id="title" class="input" type="text" required>
+                    <div class="title"></div>
+                    <label for="title" class="placeholder">Judul</label>
+                </div>
+                <div class="form-group">
+                    <input id="author" class="input" type="text" required>
+                    <div class="title title-1"></div>
+                    <label for="author" class="placeholder">Penulis</label>
+                </div>
+                <div class="form-group">
+                    <input id="year" class="input" type="number" required>
+                    <div class="title title-2"></div>
+                    <label for="year" class="placeholder">Tahun</label>
+                </div>
+                <input type="submit" value="Tambah Buku" name="submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container library">
+            <div class="search-box">
+                <input id="searchbook" class="search-txt" type="text" name="" placeholder="Cari Buku...">
+                <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="row">
+                <h2>Belum Selesai Dibaca</h2>
+                <div class="list-book" id="uncompleted">
+
+                </div>
+            </div>
+            <div class="row" >
+                <h2>Selesai Dibaca</h2>
+                <div class="list-book" id="completed">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Hand-crafted With <i class="fas fa-heart"></i> By <a href="https://github.com/madfauzy" target="_blank">Ahmad Fauzy</a></p>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
